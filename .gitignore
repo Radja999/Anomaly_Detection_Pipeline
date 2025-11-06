@@ -1,0 +1,57 @@
+# ======================================================
+# Project: AutoEncoder Network Anomaly Detection Pipeline
+# ======================================================
+
+# ---- Raw Datasets (large CSVs and archives)
+data/raw/CIC-IDS2017_CSVs/
+data/raw/Lab_Generated_Benign_Dataset/*.pcap
+data/raw/*.zip
+data/raw/*.rar
+*.csv
+
+# ---- Processed / Temporary Data
+data/processed/
+*.tmp
+*.log
+*.cache
+*.pkl
+*.npy
+
+# ---- Model Artifacts
+models/*.pt
+!models/reference/*       # Keep only pre-trained reference models
+models/*.pth
+models/*.onnx
+
+# ---- Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv/
+venv/
+env/
+
+# ---- Jupyter Notebooks
+.ipynb_checkpoints/
+
+# ---- System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDE / Editor Configurations
+.vscode/
+.idea/
+*.swp
+
+# ---- Docker / Build Files
+*.tar
+*.bak
+
+# ---- Other
+*.gz
+*.tar.gz
+*.7z
