@@ -40,7 +40,7 @@ This dataset serves as a **private benign set** for validating model generalizat
 
 ### 1. Clone the Repository 
 ```bash
-git clone https://github.com/Radja999/AutoEncoder-Network-Anomaly-Detection-Pipeline.git
+git clone https://github.com/Radja999/Anomaly_Detection_Pipeline.git
 cd AutoEncoder-Network-Anomaly-Detection-Pipeline.
 ```
 ## 2. Install Dependencies
@@ -60,7 +60,11 @@ You can run each notebook step by step:
 
 **Analysis:** data_comparison_analysis.ipynb
 
-For Google Colab, upload the notebooks and adjust paths if necessary (e.g. /content/drive/MyDrive/...).
+For Google Colab, clone the repository using the following command: 
+```bash
+!git clone https://github.com/Radja999/Anomaly_Detection_Pipeline.git
+```
+**Note:** after running the **All_Sets_Preprcessing** notebook, save the output files and then upload them to **processed** folder to run the next 3 notebooks since all the preprcoessed datasets are required as inputs to the next phases of the pipeline.
 ## 4. Docker (Optional)
 
 You can containerize the project using the provided **Dockerfile**.
